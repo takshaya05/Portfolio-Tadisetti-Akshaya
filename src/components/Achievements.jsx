@@ -1,3 +1,5 @@
+import { Trophy } from "lucide-react";
+
 const Achievements = () => {
 
   const achievements = [
@@ -24,6 +26,7 @@ const Achievements = () => {
       detail:
         "Developed real-world solutions through innovation and teamwork."
     },
+
     {
       title: "NSS Volunteer",
       description:
@@ -32,7 +35,6 @@ const Achievements = () => {
         "Contributed to community engagement, teamwork, and social responsibility activities."
     }
   ];
-
 
   return (
     <section id="achievements" className="achievements section">
@@ -46,31 +48,33 @@ const Achievements = () => {
 
         <div className="achievements-list">
 
-          {
-            achievements.map((achievement, index) => (
+          {achievements.map((achievement, index) => (
 
-              <div className="achievement-card" key={index}>
+            <div className="achievement-card" key={index}>
 
-                <div className="achievement-content">
+              <div className="achievement-icon">
+                <Trophy size={28} strokeWidth={1.8} />
+              </div>
 
-                  <h3>
-                    {achievement.title}
-                  </h3>
+              <div className="achievement-content">
 
-                  <p>
-                    {achievement.description}
-                  </p>
+                <h3>
+                  {achievement.title}
+                </h3>
 
-                  <span>
-                    {achievement.detail}
-                  </span>
+                <p>
+                  {achievement.description}
+                </p>
 
-                </div>
+                <span>
+                  {achievement.detail}
+                </span>
 
               </div>
 
-            ))
-          }
+            </div>
+
+          ))}
 
         </div>
 
@@ -79,6 +83,5 @@ const Achievements = () => {
     </section>
   );
 };
-
 
 export default Achievements;

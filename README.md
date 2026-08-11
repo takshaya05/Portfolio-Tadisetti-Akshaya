@@ -2,56 +2,45 @@
 
 ### B.Tech Computer Science and Engineering Student
 
-📧 **Email:** takshaya057@gmail.com | 23211a05v2@bvrit.ac.in | 23211a05v2@gmail.com  
-📱 **Phone:** +91 8317601566  
-📍 **Location:** Hyderabad, India  
-🔗 **LinkedIn:** [https://www.linkedin.com/in/tadisetti-akshaya/](#)  
-💻 **GitHub:** [https://github.com/takshaya05](#)
+**Location:** Hyderabad, India
+**LinkedIn:** https://www.linkedin.com/in/tadisetti-akshaya/
+**GitHub:** https://github.com/takshaya05
 
 ---
 
-## 👩‍💻 About Me
+## About Me
 
-B.Tech Computer Science and Engineering student passionate about **Artificial Intelligence, Machine Learning, and Full Stack Development**. Interested in building scalable software solutions, solving real-world problems, and continuously improving technical skills through innovation, collaboration, and hands-on projects.
-
----
-
-## 🎯 Career Objective
-
-Seeking opportunities to apply my knowledge in **Python, Java, AI/ML, and Software Development** to develop impactful applications while gaining industry experience and enhancing my technical expertise.
+Computer Science and Engineering undergraduate at **B V Raju Institute of Technology, Narsapur, Telangana**, pursuing **Bachelor of Technology (B.Tech) in Computer Science and Engineering (2023–2027)** with a **CGPA of 9.15**. Passionate about **Artificial Intelligence, Machine Learning, and Full Stack Development**, with an interest in building innovative and practical software solutions.
 
 ---
 
-## 🎓 Education
+## Career Objective
 
-**B V Raju Institute of Technology, Narsapur, Telangana**  
-**Bachelor of Technology (B.Tech) - Computer Science and Engineering**  
-**2023 – 2027**  
-**CGPA:** 9.15
+Computer Science and Engineering undergraduate with a strong interest in **Artificial Intelligence, Machine Learning, and Full Stack Development**. Seeking opportunities to apply skills in **Python, Java, AI/ML, and software development** to develop innovative solutions, contribute to real-world projects, and strengthen technical expertise through continuous learning and collaboration.
 
 ---
 
-## 🛠️ Skills
+## Skills
 
-**Programming Languages:**  
-Python, Java, C
+**Programming Languages:**
+Python, Java, C, JavaScript
 
-**Web Development:**  
-HTML, CSS, JavaScript, React.js, Node.js
+**Web Technologies:**
+HTML, CSS, React.js, Node.js
 
-**Artificial Intelligence / Machine Learning / Cloud:**  
-Fundamentals
+**Artificial Intelligence / Machine Learning:**
+AI/ML Fundamentals
 
-**Databases:**  
-MySQL, MongoDB
+**Database Technologies:**
+MySQL, Firebase, MongoDB
 
-**Platforms & Tools:**  
+**Developer Tools:**
 GitHub, VS Code, Google Colab
 
-**Core Concepts:**  
-Data Structures & Algorithms, OOPs, DBMS, Operating Systems, Computer Networks
+**Core CS Concepts:**
+Data Structures & Algorithms, Object-Oriented Programming (OOPs), DBMS, Operating Systems, Computer Networks
 
-**Soft Skills:**  
+**Soft Skills:**
 Leadership, Adaptability, Responsibility, Communication, Presentation
 
 ---

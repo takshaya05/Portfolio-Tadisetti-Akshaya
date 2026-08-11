@@ -2,91 +2,92 @@ const Projects = () => {
 
   const projects = [
     {
-      title: "Smart Travel Intelligence Platform for Travelers",
+      title: "TravizorHub",
+      tagline: "Your Gateway to Smooth Journeys",
       description: [
-        "Created an AI-powered platform to simplify foreign country laws and travel guidance.",
-        "Implemented Ollama chatbot support, law comparison features, and interactive dashboards.",
-        "Built using React.js, Node.js, Python, and OpenAI API integration."
+        "Developed an AI-powered travel intelligence platform to simplify foreign country laws, visa rules, travel regulations, and legal restrictions.",
+        "Implemented AI chatbot assistance, country selection, risk maps, travel advisories, and country comparison features.",
+        "Built using React.js, Vite, Tailwind CSS, Node.js, and Ollama API."
       ],
       technologies: [
         "React.js",
         "Node.js",
-        "Ollama"
+        "Ollama API"
       ],
       link: "https://github.com/takshaya05/TravizorHub"
     },
 
-
     {
-      title: "AI-Powered Smart Tourist Safety & Emergency Response",
+      title: "Smart Tourist",
+      tagline: "Every Step Secured, Every Trip Smarter",
       description: [
-        "Designed a real-time tourist safety system using AI-based threat detection and geo-fencing alerts.",
-        "Integrated blockchain-based digital identity verification for secure traveler authentication.",
-        "Developed using Python, Machine Learning, Blockchain, Firebase, React.js, and Node.js."
+        "Developed a smart tourist safety platform for real-time safety monitoring and emergency incident response.",
+        "Implemented AI risk detection, geo-fencing alerts, blockchain-secured digital IDs, SOS assistance, and tourist safety dashboards.",
+        "Built using React.js, Tailwind CSS, Node.js, Firebase, Google Maps API, and OpenWeatherMap API."
       ],
       technologies: [
-        "Python",
-        "Machine Learning",
-        "Blockchain"
+        "React.js",
+        "Firebase",
+        "Google Maps API"
       ],
       link: "https://github.com/takshaya05/SmartTourist"
     },
 
-
     {
-      title: "Innovative Hospital Floor Planning Using Graphormers",
+      title: "MediPlan",
+      tagline: "Intelligent Hospital Floor Planning System",
       description: [
-        "Developed a multi-model AI system to automate hospital floor planning using CNN, Graphormer, and GAN architectures.",
-        "Improved layout generation efficiency and optimization for healthcare infrastructure planning.",
-        "Utilized Python, Machine Learning, and OpenCV for model development and implementation."
+        "Developed an intelligent hospital floor planning platform to optimize healthcare infrastructure, workflows, and space utilization.",
+        "Implemented AI hospital layout generation, floor plan visualization, planning analytics, intelligent recommendations, and layout export.",
+        "Built using React.js, Vite, Node.js, CNN, Graphormer, GAN, Recharts, and Framer Motion."
       ],
       technologies: [
-        "Python",
+        "React.js",
         "Graphormer",
-        "GAN"
+        "Recharts"  
       ],
       link: "https://github.com/takshaya05"
     },
 
-
-    {
-      title: "AI Country Dashboard",
-      description: [
-        "Developed an AI-powered educational dashboard to explore countries through 3D globe visualization, interactive modules, and real-time data insights.",
-        "Implemented AI Chat Tutor using Ollama, country-based quizzes, flag matching games, and learning modules covering geography, history, economy, and current affairs.",
-        "Built an immersive learning platform using React.js, AI integration, 3D visualization, and modern web technologies for interactive country exploration."
-      ],
-      technologies: [
-        "React.js",
-        "Ollama",
-        "3D Visualization"
-      ],
-      link: "https://github.com/takshaya05/AiCountryDashboard"
-    },
-
-
     {
       title: "CardVista",
+      tagline: "Scan. View. Connect.",
       description: [
-        "Developed an AR-powered digital visiting card platform that enables users to create, scan, and interact with futuristic 3D business cards directly through the browser.",
-        "Implemented WebAR simulations with holographic cards, avatars, animations, QR scanning, voice introductions, and interactive contact actions.",
-        "Built a modern glassmorphism interface with authentication, profile management, customizable scenes, and responsive design using React.js, Tailwind CSS, and Node.js."
+        "Developed an AR-enabled digital visiting card platform for creating, scanning, viewing, and interacting with futuristic 3D business cards.",
+        "Implemented WebAR simulations, holographic cards, avatars, QR scanning, voice introductions, interactive contact actions, and customizable AR scenes.",
+        "Built using React.js, Vite, Tailwind CSS, Node.js, and Three.js."
       ],
       technologies: [
         "React.js",
-        "Tailwind CSS",
-        "WebAR"
+        "Three.js",
+        "Node.js"
       ],
       link: "https://github.com/takshaya05/CardVista"
     },
 
+    {
+      title: "AI Country Dashboard",
+      tagline: "Explore. Learn. Discover the World with AI.",
+      description: [
+        "Developed an AI-powered educational dashboard for interactive country exploration, global learning, and knowledge discovery.",
+        "Implemented a 3D globe simulator, AI Chat Tutor, country learning modules, quizzes, flag-matching games, and interactive country data.",
+        "Built using React.js, Vite, Tailwind CSS, Node.js, Ollama API and Three.js."
+      ],
+      technologies: [
+        "React.js",
+        "Ollama API",
+        "Three.js"
+      ],
+      link: "https://github.com/takshaya05/AiCountryDashboard"
+    },
 
     {
       title: "Akinator",
+      tagline: "The Mind Reading Game",
       description: [
-        "Developed an interactive AI-based guessing game that predicts user-thought characters through a sequence of intelligent questions.",
-        "Designed a responsive dark-themed interface with game flow management, instructions, contact features, and smooth navigation.",
-        "Built using React.js, Vite, Tailwind CSS, and React Router DOM for a fast and engaging web experience."
+        "Developed an interactive mind-reading game that guesses real or fictional characters based on user responses.",
+        "Implemented intelligent question-based gameplay, Yes/No answer selection, character narrowing, and an engaging interactive game flow.",
+        "Built using React.js, Vite, JavaScript, Tailwind CSS and Node.js."
       ],
       technologies: [
         "React.js",
@@ -97,7 +98,6 @@ const Projects = () => {
     }
   ];
 
-
   return (
     <section id="projects" className="projects section">
 
@@ -107,7 +107,6 @@ const Projects = () => {
           <h2>Projects</h2>
           <span></span>
         </div>
-
 
         <div className="projects-grid">
 
@@ -120,6 +119,9 @@ const Projects = () => {
                   {project.title}
                 </h3>
 
+                <p className="project-tagline">
+                  {project.tagline}
+                </p>
 
                 <ul>
                   {
@@ -130,7 +132,6 @@ const Projects = () => {
                     ))
                   }
                 </ul>
-
 
                 <div className="tech-stack">
 
@@ -144,7 +145,6 @@ const Projects = () => {
 
                 </div>
 
-
                 <a
                   href={project.link}
                   className="github-btn"
@@ -153,7 +153,6 @@ const Projects = () => {
                 >
                   View GitHub
                 </a>
-
 
               </div>
 
@@ -167,6 +166,5 @@ const Projects = () => {
     </section>
   );
 };
-
 
 export default Projects;

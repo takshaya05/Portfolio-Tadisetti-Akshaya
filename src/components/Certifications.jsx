@@ -1,3 +1,5 @@
+import { Award } from "lucide-react";
+
 const Certifications = () => {
 
   const certifications = [
@@ -27,57 +29,44 @@ const Certifications = () => {
     }
   ];
 
-
   return (
     <section id="certifications" className="certifications section">
 
       <div className="certifications-container">
-
 
         <div className="section-title">
           <h2>Certifications</h2>
           <span></span>
         </div>
 
-
-
         <div className="certifications-grid">
 
+          {certifications.map((certificate, index) => (
 
-          {
-            certifications.map((certificate,index)=>(
+            <div className="certificate-card" key={index}>
 
-              <div className="certificate-card" key={index}>
-
-                <div className="certificate-icon">
-                  ✦
-                </div>
-
-
-                <h3>
-                  {certificate.title}
-                </h3>
-
-
-                <p>
-                  {certificate.issuer}
-                </p>
-
-
+              <div className="certificate-icon">
+                <Award size={28} strokeWidth={1.8} />
               </div>
 
-            ))
-          }
+              <h3>
+                {certificate.title}
+              </h3>
 
+              <p>
+                {certificate.issuer}
+              </p>
+
+            </div>
+
+          ))}
 
         </div>
-
 
       </div>
 
     </section>
   );
 };
-
 
 export default Certifications;
