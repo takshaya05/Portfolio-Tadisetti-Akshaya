@@ -1,16 +1,11 @@
 # TADISETTI AKSHAYA
 
-### B.Tech Computer Science and Engineering Student
-
-**Location:** Hyderabad, India
-**LinkedIn:** https://www.linkedin.com/in/tadisetti-akshaya/
-**GitHub:** https://github.com/takshaya05
-
+### Computer Science and Engineering Undergraduate
 ---
 
 ## About Me
 
-Computer Science and Engineering undergraduate at **B V Raju Institute of Technology, Narsapur, Telangana**, pursuing **Bachelor of Technology (B.Tech) in Computer Science and Engineering (2023–2027)** with a **CGPA of 9.15**. Passionate about **Artificial Intelligence, Machine Learning, and Full Stack Development**, with an interest in building innovative and practical software solutions.
+Computer Science and Engineering undergraduate at **B V Raju Institute of Technology, Narsapur, Telangana**, pursuing **Bachelor of Technology (B.Tech) in Computer Science and Engineering (2023–2027)**. Passionate about **Artificial Intelligence, Machine Learning, and Full Stack Development**, with an interest in building innovative and practical software solutions.
 
 ---
 
@@ -22,23 +17,17 @@ Computer Science and Engineering undergraduate with a strong interest in **Artif
 
 ## Skills
 
-**Programming Languages:**
+**Languages:**
 Python, Java, C, JavaScript
 
 **Web Technologies:**
 HTML, CSS, React.js, Node.js
 
-**Artificial Intelligence / Machine Learning:**
-AI/ML Fundamentals
-
-**Database Technologies:**
-MySQL, Firebase, MongoDB
-
-**Developer Tools:**
-GitHub, VS Code, Google Colab
+**Database & Developer Tools:**
+MySQL, MongoDB, Firebase, GitHub, VS Code, Google Colab
 
 **Core CS Concepts:**
-Data Structures & Algorithms, Object-Oriented Programming (OOPs), DBMS, Operating Systems, Computer Networks
+Data Structures & Algorithms, Object-Oriented Programming (OOPs), DBMS, Operating Systems, Computer Networks, AI/ML Fundamentals
 
 **Soft Skills:**
 Leadership, Adaptability, Responsibility, Communication, Presentation

@@ -22,7 +22,7 @@ import {
 const Skills = () => {
   const skills = [
     {
-      title: "Programming Languages",
+      title: "Languages",
       icon: FaLayerGroup,
       items: [
         { name: "Python", icon: FaPython },
