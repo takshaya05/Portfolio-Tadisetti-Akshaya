@@ -1,10 +1,8 @@
 import {
   FaEnvelope,
-  FaPhone,
   FaLinkedin,
   FaGithub
 } from "react-icons/fa";
-
 
 const Contact = () => {
 
@@ -12,8 +10,8 @@ const Contact = () => {
     {
       icon: <FaEnvelope />,
       title: "Email",
-      value: "takshaya057@gmail.com",
-      link: "mailto:takshaya057@gmail.com"
+      value: "tadisettiakshaya@gmail.com",
+      link: "mailto:tadisettiakshaya@gmail.com"
     },
     {
       icon: <FaEnvelope />,
@@ -22,22 +20,10 @@ const Contact = () => {
       link: "mailto:23211a05v2@bvrit.ac.in"
     },
     {
-      icon: <FaEnvelope />,
-      title: "Alternate Email",
-      value: "23211a05v2@gmail.com",
-      link: "mailto:23211a05v2@gmail.com"
-    },
-    {
-      icon: <FaPhone />,
-      title: "Phone",
-      value: "+91 8317601566",
-      link: "tel:+918317601566"
-    },
-    {
       icon: <FaLinkedin />,
       title: "LinkedIn",
-      value: "tadisetti-akshaya",
-      link: "https://www.linkedin.com/in/tadisetti-akshaya/"
+      value: "tadisettiakshaya",
+      link: "https://www.linkedin.com/in/tadisettiakshaya/"
     },
     {
       icon: <FaGithub />,
@@ -47,81 +33,104 @@ const Contact = () => {
     }
   ];
 
-
   return (
     <section id="contact" className="contact section">
 
-
       <div className="contact-container">
-
 
         <div className="section-title">
           <h2>Contact</h2>
           <span></span>
         </div>
 
-
-
         <div className="contact-grid">
 
+          {contactDetails.map((item, index) => (
+            <div className="contact-card" key={index}>
 
-          {
-            contactDetails.map((item,index)=>(
-
-              <div className="contact-card" key={index}>
-
-
-                <div className="contact-icon">
-                  {item.icon}
-                </div>
-
-
-                <div>
-
-                  <h3>
-                    {item.title}
-                  </h3>
-
-
-                  {
-                    item.link ? (
-
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        {item.value}
-                      </a>
-
-                    ) : (
-
-                      <p>
-                        {item.value}
-                      </p>
-
-                    )
-                  }
-
-
-                </div>
-
-
+              <div className="contact-icon">
+                {item.icon}
               </div>
 
-            ))
-          }
+              <div>
+                <h3>{item.title}</h3>
 
+                <a
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {item.value}
+                </a>
+              </div>
+
+            </div>
+          ))}
 
         </div>
 
+        <div className="contact-form">
+
+          <h3>Quick Message</h3>
+
+          <form action="https://formsubmit.co/tadisettiakshaya@gmail.com" method="POST">
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Message from Portfolio"
+            />
+
+            <input
+              type="hidden"
+              name="_captcha"
+              value="false"
+            />
+
+            <div className="form-row">
+
+              <input
+                type="text"
+                name="name"
+                placeholder="Name"
+                required
+              />
+
+              <input
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+
+            </div>
+
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              required
+            />
+
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Message"
+              required
+            ></textarea>
+
+            <button type="submit">
+              Send Message
+            </button>
+
+          </form>
+
+        </div>
 
       </div>
-
 
     </section>
   );
 };
-
 
 export default Contact;

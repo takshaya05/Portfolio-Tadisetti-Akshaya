@@ -1,37 +1,49 @@
-import { Award } from "lucide-react";
+import {
+  FaCertificate,
+  FaPython,
+  FaHtml5,
+  FaBrain,
+  FaJava,
+  FaDatabase,
+  FaCode
+} from "react-icons/fa";
 
 const Certifications = () => {
-
   const certifications = [
     {
-      title: "Python Essentials, HTML Essentials, JavaScript Essentials",
-      issuer: "CISCO"
+      title: "Python Essentials",
+      issuer: "CISCO",
+      icon: FaPython
+    },
+    {
+      title: "HTML Essentials, JavaScript Essentials",
+      issuer: "CISCO",
+      icon: FaHtml5
+    },
+    {
+      title: "AI/ML",
+      issuer: "Google Skills & Infosys Springboard",
+      icon: FaBrain
     },
     {
       title: "Java Programming",
-      issuer: "NPTEL"
-    },
-    {
-      title: "Artificial Intelligence & Machine Learning",
-      issuer: "Google Skills & Infosys Springboard"
+      issuer: "NPTEL",
+      icon: FaJava
     },
     {
       title: "Database Programming with SQL",
-      issuer: "TASK"
-    },
-    {
-      title: "AWS Cloud Practitioner Essentials",
-      issuer: "AWS"
+      issuer: "TASK",
+      icon: FaDatabase
     },
     {
       title: "Smart Coder (Bronze)",
-      issuer: "Smart Interviews"
+      issuer: "Smart Interviews",
+      icon: FaCode
     }
   ];
 
   return (
     <section id="certifications" className="certifications section">
-
       <div className="certifications-container">
 
         <div className="section-title">
@@ -40,31 +52,31 @@ const Certifications = () => {
         </div>
 
         <div className="certifications-grid">
+          {certifications.map((certificate, index) => {
+            const CertificateIcon = certificate.icon;
 
-          {certifications.map((certificate, index) => (
+            return (
+              <div className="certificate-card" key={index}>
 
-            <div className="certificate-card" key={index}>
+                <div className="certificate-icon">
+                  <CertificateIcon size={22} />
+                </div>
 
-              <div className="certificate-icon">
-                <Award size={28} strokeWidth={1.8} />
+                <div className="certificate-content">
+                  <h3>{certificate.title}</h3>
+
+                  <p>
+                    <FaCertificate size={13} />
+                    <span>{certificate.issuer}</span>
+                  </p>
+                </div>
+
               </div>
-
-              <h3>
-                {certificate.title}
-              </h3>
-
-              <p>
-                {certificate.issuer}
-              </p>
-
-            </div>
-
-          ))}
-
+            );
+          })}
         </div>
 
       </div>
-
     </section>
   );
 };

@@ -6,13 +6,13 @@ const Footer = () => {
 
         <div className="footer-left">
           <h3>Tadisetti Akshaya</h3>
-          <p>B.Tech Computer Science Student</p>
+          <p>Computer Science and Engineering Undergraduate</p>
         </div>
 
 
         <div className="footer-right">
           <span>
-            © {new Date().getFullYear()} Tadisetti Akshaya. All Rights Reserved.
+            © {new Date().getFullYear()} Portfolio. All Rights Reserved.
           </span>
         </div>
 

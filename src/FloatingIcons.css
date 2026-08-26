@@ -1,0 +1,198 @@
+.floating-icons {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.floating-icon {
+  position: absolute;
+  width: 28px;
+  height: 28px;
+
+  color: var(--icon-color);
+
+  opacity: 0.055;
+
+  filter: blur(0.2px);
+
+  animation:
+    floatingIcon 18s ease-in-out infinite,
+    floatingRotate 22s linear infinite;
+
+  transition:
+    color 0.6s ease,
+    opacity 0.6s ease;
+}
+
+.float-icon-1 {
+  top: 12%;
+  left: 8%;
+  width: 34px;
+  height: 34px;
+  animation-duration: 20s, 28s;
+}
+
+.float-icon-2 {
+  top: 25%;
+  left: 24%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 17s, 25s;
+  animation-delay: -4s;
+}
+
+.float-icon-3 {
+  top: 15%;
+  right: 28%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 22s, 30s;
+  animation-delay: -8s;
+}
+
+.float-icon-4 {
+  top: 42%;
+  left: 12%;
+  width: 27px;
+  height: 27px;
+  animation-duration: 19s, 26s;
+  animation-delay: -6s;
+}
+
+.float-icon-5 {
+  top: 55%;
+  left: 30%;
+  width: 32px;
+  height: 32px;
+  animation-duration: 23s, 32s;
+  animation-delay: -11s;
+}
+
+.float-icon-6 {
+  top: 68%;
+  right: 25%;
+  width: 26px;
+  height: 26px;
+  animation-duration: 18s, 27s;
+  animation-delay: -3s;
+}
+
+.float-icon-7 {
+  top: 78%;
+  left: 10%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 24s, 35s;
+  animation-delay: -14s;
+}
+
+.float-icon-8 {
+  top: 35%;
+  right: 12%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 21s, 29s;
+  animation-delay: -9s;
+}
+
+.float-icon-9 {
+  top: 62%;
+  right: 8%;
+  width: 34px;
+  height: 34px;
+  animation-duration: 20s, 31s;
+  animation-delay: -7s;
+}
+
+.float-icon-10 {
+  top: 88%;
+  right: 35%;
+  width: 25px;
+  height: 25px;
+  animation-duration: 19s, 28s;
+  animation-delay: -12s;
+}
+
+@keyframes floatingIcon {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate3d(18px, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(-12px, -45px, 0);
+  }
+
+  75% {
+    transform: translate3d(-25px, -15px, 0);
+  }
+}
+
+@keyframes floatingRotate {
+  0% {
+    rotate: 0deg;
+  }
+
+  50% {
+    rotate: 8deg;
+  }
+
+  100% {
+    rotate: 0deg;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-icon {
+    opacity: 0.045;
+  }
+
+  .float-icon-1,
+  .float-icon-7,
+  .float-icon-9 {
+    width: 27px;
+    height: 27px;
+  }
+
+  .float-icon-2,
+  .float-icon-4,
+  .float-icon-6,
+  .float-icon-10 {
+    width: 21px;
+    height: 21px;
+  }
+
+  .float-icon-3,
+  .float-icon-5,
+  .float-icon-8 {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .floating-icon {
+    opacity: 0.035;
+  }
+
+  .float-icon-2,
+  .float-icon-4,
+  .float-icon-6,
+  .float-icon-10 {
+    display: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .floating-icon {
+    animation: none;
+  }
+}

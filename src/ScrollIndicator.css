@@ -1,0 +1,184 @@
+.scroll-indicator {
+  position: fixed;
+  top: 0;
+  right: 22px;
+  width: 24px;
+  height: 100vh;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  --active-color: #f5efe6;
+}
+
+.scroll-track {
+  position: relative;
+  width: 2px;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.08);
+  transition: box-shadow 0.6s ease;
+}
+
+.scroll-track::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 100%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    #f5efe6,
+    #e9ddca,
+    #dcc9ac,
+    #cdb38f,
+    #bd9d73,
+    #aa875e,
+    #906b45,
+    #745331
+  );
+  border-radius: 10px;
+  opacity: 0.4;
+}
+
+.scroll-dot {
+  position: relative;
+  width: 12px;
+  height: 12px;
+  padding: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: #292929;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  z-index: 2;
+  transition:
+    transform 0.4s ease,
+    background 0.6s ease,
+    box-shadow 0.6s ease,
+    border-color 0.6s ease;
+}
+
+.scroll-dot.active {
+  background: var(--dot-color);
+  border-color: var(--dot-color);
+  transform: scale(1.5);
+  box-shadow:
+    0 0 4px var(--dot-color),
+    0 0 8px var(--dot-color);
+}
+
+.scroll-dot:hover {
+  background: var(--dot-color);
+  border-color: var(--dot-color);
+  transform: scale(1.35);
+  box-shadow:
+    0 0 4px var(--dot-color),
+    0 0 8px var(--dot-color);
+}
+
+.scroll-label {
+  position: absolute;
+  right: 25px;
+  top: 50%;
+  transform: translateY(-50%) translateX(10px);
+  padding: 6px 11px;
+  border-radius: 7px;
+  background: rgba(27, 27, 27, 0.95);
+  border: 1px solid var(--dot-color);
+  color: var(--dot-color);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.scroll-dot:hover .scroll-label {
+  opacity: 1;
+  transform: translateY(-50%) translateX(0);
+}
+
+.scroll-indicator::after {
+  content: "";
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: var(--active-color);
+  filter: blur(25px);
+  opacity: 0.04;
+  pointer-events: none;
+  transition: background 0.6s ease;
+}
+
+@media (max-width: 900px) {
+  .scroll-indicator {
+    right: 12px;
+    width: 20px;
+  }
+
+  .scroll-track {
+    height: 82vh;
+  }
+
+  .scroll-dot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .scroll-indicator {
+    right: 7px;
+    width: 16px;
+  }
+
+  .scroll-track {
+    height: 78vh;
+  }
+
+  .scroll-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .scroll-label {
+    display: none;
+  }
+
+  .scroll-dot.active {
+    transform: scale(1.45);
+  }
+}
+
+@media (max-width: 400px) {
+  .scroll-indicator {
+    right: 5px;
+    width: 14px;
+  }
+
+  .scroll-track {
+    height: 75vh;
+  }
+
+  .scroll-dot {
+    width: 7px;
+    height: 7px;
+  }
+}

@@ -8,13 +8,15 @@ import Certifications from "./components/Certifications";
 import Achievements from "./components/Achievements";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import ScrollIndicator from "./components/ScrollIndicator";
+import FloatingIcons from "./components/FloatingIcons";
 
 function App() {
   return (
     <div className="app">
-
+      <FloatingIcons />
       <Header />
-
+      <ScrollIndicator />
       <main>
         <Hero />
         <About />

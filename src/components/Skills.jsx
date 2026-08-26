@@ -1,30 +1,72 @@
-import { Code2 } from "lucide-react";
+import {
+  FaPython,
+  FaJava,
+  FaJsSquare,
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaGithub,
+  FaDatabase,
+  FaBrain,
+  FaLaptopCode,
+  FaNetworkWired,
+  FaCode,
+  FaCodeBranch,
+  FaLayerGroup,
+  FaGlobe,
+  FaTools,
+  FaMicrochip
+} from "react-icons/fa";
 
 const Skills = () => {
   const skills = [
     {
       title: "Programming Languages",
-      items: "Python, Java, C, JavaScript"
+      icon: FaLayerGroup,
+      items: [
+        { name: "Python", icon: FaPython },
+        { name: "Java", icon: FaJava },
+        { name: "C", icon: FaCode },
+        { name: "JavaScript", icon: FaJsSquare }
+      ]
     },
+
     {
       title: "Web Technologies",
-      items: "HTML, CSS, React.js, Node.js"
+      icon: FaGlobe,
+      items: [
+        { name: "HTML", icon: FaHtml5 },
+        { name: "CSS", icon: FaCss3Alt },
+        { name: "React.js", icon: FaReact },
+        { name: "Node.js", icon: FaNodeJs }
+      ]
     },
+
     {
-      title: "Artificial Intelligence / Machine Learning",
-      items: "AI/ML Fundamentals"
+      title: "Database & Developer Tools",
+      icon: FaTools,
+      items: [
+        { name: "MySQL", icon: FaDatabase },
+        { name: "MongoDB", icon: FaDatabase },
+        { name: "Firebase", icon: FaDatabase },
+        { name: "GitHub", icon: FaGithub },
+        { name: "VS Code", icon: FaCode },
+        { name: "Google Colab", icon: FaBrain }
+      ]
     },
-    {
-      title: "Database Technologies",
-      items: "MySQL, Firebase, MongoDB"
-    },
-    {
-      title: "Developer Tools",
-      items: "GitHub, VS Code, Google Colab"
-    },
+
     {
       title: "Core CS Concepts",
-      items: "Data Structures & Algorithms, OOPs, DBMS, Operating Systems, Computer Networks"
+      icon: FaMicrochip,
+      items: [
+        { name: "Data Structures & Algorithms", icon: FaCodeBranch },
+        { name: "OOPs", icon: FaLaptopCode },
+        { name: "DBMS", icon: FaDatabase },
+        { name: "Operating Systems", icon: FaLaptopCode },
+        { name: "Computer Networks", icon: FaNetworkWired },
+        { name: "AI/ML Fundamentals", icon: FaBrain }
+      ]
     }
   ];
 
@@ -38,19 +80,36 @@ const Skills = () => {
         </div>
 
         <div className="skills-grid">
-          {skills.map((skill, index) => (
-            <div className="skill-card" key={index}>
+          {skills.map((category, index) => {
+            const CategoryIcon = category.icon;
 
-              <div className="skill-icon">
-                <Code2 size={28} strokeWidth={1.8} />
+            return (
+              <div className="skill-card" key={index}>
+
+                <h3>
+                  <CategoryIcon size={20} />
+                  <span>{category.title}</span>
+                </h3>
+
+                <div className="skill-items">
+                  {category.items.map((skill, skillIndex) => {
+                    const Icon = skill.icon;
+
+                    return (
+                      <div className="skill-item" key={skillIndex}>
+                        <div className="skill-icon">
+                          <Icon size={24} />
+                        </div>
+
+                        <span>{skill.name}</span>
+                      </div>
+                    );
+                  })}
+                </div>
+
               </div>
-
-              <h3>{skill.title}</h3>
-
-              <p>{skill.items}</p>
-
-            </div>
-          ))}
+            );
+          })}
         </div>
 
       </div>

@@ -1,0 +1,159 @@
+.header {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(1000px, 90%);
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 22px;
+
+  background: rgba(27, 27, 27, 0.72);
+  border: 1px solid var(--border);
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-radius: 50px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--primary);
+}
+
+.logo span {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--accent)
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo small {
+  color: var(--accent);
+  font-size: 1.5rem;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.nav-link {
+  position: relative;
+
+  background: none;
+  color: var(--secondary);
+
+  padding: 8px 12px;
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  transition: 0.3s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link.active {
+  color: var(--accent);
+}
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 22px;
+  height: 2px;
+
+  border-radius: 20px;
+  background: var(--accent);
+}
+
+.menu-btn {
+  display: none;
+  background: transparent;
+  color: var(--primary);
+}
+
+@media (max-width: 900px) {
+  .header {
+    top: 12px;
+    width: calc(100% - 30px);
+  }
+
+  .menu-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .nav {
+    position: absolute;
+
+    top: 65px;
+    left: 0;
+
+    width: 100%;
+
+    flex-direction: column;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    background: rgba(27, 27, 27, 0.95);
+    border: 1px solid var(--border);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transform: translateY(-15px);
+
+    transition: 0.35s ease;
+  }
+
+  .nav.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: center;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-container {
+    padding: 10px 16px;
+  }
+
+  .logo {
+    font-size: 1.1rem;
+  }
+}

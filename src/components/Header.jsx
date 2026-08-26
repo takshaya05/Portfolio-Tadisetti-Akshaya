@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Menu, X, UserRound } from "lucide-react";
 
 const sections = [
   "home",
@@ -53,49 +53,40 @@ const Header = () => {
 
   return (
     <header className="header">
-
       <div className="header-container">
 
-        <div 
+        <div
           className="logo"
           onClick={() => scrollToSection("home")}
         >
+          <UserRound size={20} strokeWidth={1.8} />
           <span>Tadisetti Akshaya</span>
         </div>
 
-
         <nav className={menuOpen ? "nav active" : "nav"}>
-
           {sections.map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
               className={
-                active === item 
-                ? "nav-link active"
-                : "nav-link"
+                active === item
+                  ? "nav-link active"
+                  : "nav-link"
               }
             >
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </button>
           ))}
-
         </nav>
-
 
         <button
           className="menu-btn"
           onClick={() => setMenuOpen(!menuOpen)}
         >
-          {
-            menuOpen 
-            ? <X size={25}/>
-            : <Menu size={25}/>
-          }
+          {menuOpen ? <X size={25} /> : <Menu size={25} />}
         </button>
 
       </div>
-
     </header>
   );
 };

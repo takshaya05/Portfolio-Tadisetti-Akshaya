@@ -13,10 +13,9 @@ const About = () => {
         <div className="about-card">
 
           <p className="about-text">
-            I'm <strong>Tadisetti Akshaya</strong>, a B.Tech Computer Science and
-            Engineering student at <strong>B V Raju Institute of Technology</strong>,
-            Narsapur, Telangana, pursuing my Bachelor of Technology from 2023 to
-            2027 with a CGPA of <strong>9.15</strong>.
+            I'm <strong>Tadisetti Akshaya</strong>, a Computer Science and Engineering undergraduate at 
+            <strong> B V Raju Institute of Technology</strong>, Narsapur, Telangana, pursuing my 
+            Bachelor of Technology from 2023 to 2027 with a CGPA of <strong>9.15</strong>.
           </p>
 
 
@@ -28,6 +27,14 @@ const About = () => {
             real-world problems through innovative technology solutions, and
             continuously enhancing my technical skills through learning,
             collaboration, and practical experience.
+          </p>
+
+          <p className="about-text">
+            Beyond technical skills, I possess strong <strong>leadership, adaptability,
+            responsibility, communication, and presentation </strong>skills. I also serve
+            as an <strong>NSS Coordinator</strong> at the NSS Unit, BVRIT,
+            where I organize and participate in activities, contributing to community 
+            development initiatives while strengthening my leadership, teamwork, and organizational abilities.
           </p>
 
         </div>
