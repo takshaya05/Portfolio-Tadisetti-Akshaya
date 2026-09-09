@@ -45,7 +45,7 @@ const Projects = () => {
         "Built using React.js, Vite, Node.js, CNN, Graphormer, GAN."
       ],
       technologies: ["React.js", "Graphormer", "GAN"],
-      link: "https://github.com/takshaya05"
+      link: "https://github.com/takshaya05/MediPlan"
     },
     {
       title: "CardVista",
@@ -78,9 +78,9 @@ const Projects = () => {
       description: [
         "Developed an interactive mind-reading game that guesses real or fictional characters based on user responses.",
         "Implemented intelligent question-based gameplay, Yes/No answer selection, character narrowing, and an engaging interactive game flow.",
-        "Built using React.js, Vite, JavaScript, Tailwind CSS and Node.js."
+        "Built using React.js, Vite, JavaScript, MongoDB, Express.js and Node.js."
       ],
-      technologies: ["React.js", "Vite", "Tailwind CSS"],
+      technologies: ["React.js", "Node.js", "MongoDB"],
       link: "https://github.com/takshaya05/Akinator"
     }
   ];
