@@ -3,6 +3,7 @@ import {
   FaLinkedin,
   FaGithub
 } from "react-icons/fa";
+import { Mail } from "lucide-react";
 
 const Contact = () => {
 
@@ -39,7 +40,10 @@ const Contact = () => {
       <div className="contact-container">
 
         <div className="section-title">
-          <h2>Contact</h2>
+          <h2>
+            <Mail className="contact-title-icon" />
+            Contact
+          </h2>
           <span></span>
         </div>
 

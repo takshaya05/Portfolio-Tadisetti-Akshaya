@@ -8,30 +8,46 @@ import {
   Brain,
   Globe,
   Cloud,
-  Lock
+  Lock,
+  House,
+  User,
+  GraduationCap,
+  Wrench,
+  FolderKanban,
+  Award,
+  Trophy,
+  Mail
 } from "lucide-react";
 
 const icons = [
-  { Icon: Monitor, color: "#f5efe6", className: "float-icon-1" },
-  { Icon: Laptop, color: "#f5efe6", className: "float-icon-2" },
-  { Icon: Settings, color: "#f5efe6", className: "float-icon-3" },
-  { Icon: Puzzle, color: "#f5efe6", className: "float-icon-4" },
-  { Icon: Database, color: "#f5efe6", className: "float-icon-5" },
-  { Icon: Link, color: "#f5efe6", className: "float-icon-6" },
-  { Icon: Brain, color: "#f5efe6", className: "float-icon-7" },
-  { Icon: Globe, color: "#f5efe6", className: "float-icon-8" },
-  { Icon: Cloud, color: "#f5efe6", className: "float-icon-9" },
-  { Icon: Lock, color: "#f5efe6", className: "float-icon-10" }
+  { Icon: Monitor, className: "float-icon-1" },
+  { Icon: Laptop, className: "float-icon-2" },
+  { Icon: Settings, className: "float-icon-3" },
+  { Icon: Puzzle, className: "float-icon-4" },
+  { Icon: Database, className: "float-icon-5" },
+  { Icon: Link, className: "float-icon-6" },
+  { Icon: Brain, className: "float-icon-7" },
+  { Icon: Globe, className: "float-icon-8" },
+  { Icon: Cloud, className: "float-icon-9" },
+  { Icon: Lock, className: "float-icon-10" },
+  { Icon: House, className: "float-icon-11" },
+  { Icon: User, className: "float-icon-12" },
+  { Icon: GraduationCap, className: "float-icon-13" },
+  { Icon: Wrench, className: "float-icon-14" },
+  { Icon: FolderKanban, className: "float-icon-15" },
+  { Icon: Award, className: "float-icon-16" },
+  { Icon: Trophy, className: "float-icon-17" },
+  { Icon: Mail, className: "float-icon-18" }
 ];
 
 const FloatingIcons = () => {
   return (
     <div className="floating-icons">
-      {icons.map(({ Icon, color, className }, index) => (
+      {icons.map(({ Icon, className }, index) => (
         <Icon
           key={index}
           className={`floating-icon ${className}`}
-          style={{ "--icon-color": color }}
+          strokeWidth={1.6}
         />
       ))}
     </div>

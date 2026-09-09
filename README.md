@@ -24,7 +24,7 @@ Python, Java, C, JavaScript
 HTML, CSS, React.js, Node.js
 
 **Database & Developer Tools:**
-MySQL, MongoDB, Firebase, GitHub, VS Code, Google Colab
+MySQL, MongoDB, GitHub, VS Code, Google Colab
 
 **Core CS Concepts:**
 Data Structures & Algorithms, Object-Oriented Programming (OOPs), DBMS, Operating Systems, Computer Networks, AI/ML Fundamentals

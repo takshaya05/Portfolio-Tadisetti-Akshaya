@@ -18,6 +18,7 @@ import {
   FaTools,
   FaMicrochip
 } from "react-icons/fa";
+import { Wrench } from "lucide-react";
 
 const Skills = () => {
   const skills = [
@@ -31,7 +32,6 @@ const Skills = () => {
         { name: "JavaScript", icon: FaJsSquare }
       ]
     },
-
     {
       title: "Web Technologies",
       icon: FaGlobe,
@@ -42,7 +42,6 @@ const Skills = () => {
         { name: "Node.js", icon: FaNodeJs }
       ]
     },
-
     {
       title: "Database & Developer Tools",
       icon: FaTools,
@@ -55,7 +54,6 @@ const Skills = () => {
         { name: "Google Colab", icon: FaBrain }
       ]
     },
-
     {
       title: "Core CS Concepts",
       icon: FaMicrochip,
@@ -73,9 +71,11 @@ const Skills = () => {
   return (
     <section id="skills" className="skills section">
       <div className="skills-container">
-
         <div className="section-title">
-          <h2>Skills</h2>
+          <h2>
+            <Wrench className="skills-title-icon" />
+            Skills
+          </h2>
           <span></span>
         </div>
 
@@ -85,7 +85,6 @@ const Skills = () => {
 
             return (
               <div className="skill-card" key={index}>
-
                 <h3>
                   <CategoryIcon size={20} />
                   <span>{category.title}</span>
@@ -106,12 +105,10 @@ const Skills = () => {
                     );
                   })}
                 </div>
-
               </div>
             );
           })}
         </div>
-
       </div>
     </section>
   );

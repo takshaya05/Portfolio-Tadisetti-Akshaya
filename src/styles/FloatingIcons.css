@@ -5,159 +5,217 @@
   height: 100vh;
   overflow: hidden;
   pointer-events: none;
-  z-index: -1;
+  z-index: 0;
 }
 
 .floating-icon {
   position: absolute;
-  width: 28px;
-  height: 28px;
-
-  color: var(--icon-color);
-
+  color: var(--secondary);
   opacity: 0.055;
-
   filter: blur(0.2px);
-
-  animation:
-    floatingIcon 18s ease-in-out infinite,
-    floatingRotate 22s linear infinite;
-
-  transition:
-    color 0.6s ease,
-    opacity 0.6s ease;
+  will-change: transform;
+  animation-name: floatingIcon;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
 }
 
 .float-icon-1 {
-  top: 12%;
-  left: 8%;
+  top: 10%;
+  left: 7%;
   width: 34px;
   height: 34px;
-  animation-duration: 20s, 28s;
+  animation-duration: 16s;
 }
 
 .float-icon-2 {
-  top: 25%;
-  left: 24%;
+  top: 22%;
+  left: 25%;
   width: 25px;
   height: 25px;
-  animation-duration: 17s, 25s;
-  animation-delay: -4s;
-}
-
-.float-icon-3 {
-  top: 15%;
-  right: 28%;
-  width: 30px;
-  height: 30px;
-  animation-duration: 22s, 30s;
-  animation-delay: -8s;
-}
-
-.float-icon-4 {
-  top: 42%;
-  left: 12%;
-  width: 27px;
-  height: 27px;
-  animation-duration: 19s, 26s;
-  animation-delay: -6s;
-}
-
-.float-icon-5 {
-  top: 55%;
-  left: 30%;
-  width: 32px;
-  height: 32px;
-  animation-duration: 23s, 32s;
-  animation-delay: -11s;
-}
-
-.float-icon-6 {
-  top: 68%;
-  right: 25%;
-  width: 26px;
-  height: 26px;
-  animation-duration: 18s, 27s;
+  animation-duration: 12s;
   animation-delay: -3s;
 }
 
-.float-icon-7 {
-  top: 78%;
-  left: 10%;
-  width: 35px;
-  height: 35px;
-  animation-duration: 24s, 35s;
-  animation-delay: -14s;
-}
-
-.float-icon-8 {
-  top: 35%;
-  right: 12%;
+.float-icon-3 {
+  top: 13%;
+  right: 28%;
   width: 30px;
   height: 30px;
-  animation-duration: 21s, 29s;
-  animation-delay: -9s;
-}
-
-.float-icon-9 {
-  top: 62%;
-  right: 8%;
-  width: 34px;
-  height: 34px;
-  animation-duration: 20s, 31s;
+  animation-duration: 19s;
   animation-delay: -7s;
 }
 
+.float-icon-4 {
+  top: 40%;
+  left: 11%;
+  width: 27px;
+  height: 27px;
+  animation-duration: 14s;
+  animation-delay: -5s;
+}
+
+.float-icon-5 {
+  top: 53%;
+  left: 29%;
+  width: 32px;
+  height: 32px;
+  animation-duration: 18s;
+  animation-delay: -10s;
+}
+
+.float-icon-6 {
+  top: 67%;
+  right: 25%;
+  width: 26px;
+  height: 26px;
+  animation-duration: 13s;
+  animation-delay: -2s;
+}
+
+.float-icon-7 {
+  top: 77%;
+  left: 9%;
+  width: 35px;
+  height: 35px;
+  animation-duration: 20s;
+  animation-delay: -8s;
+}
+
+.float-icon-8 {
+  top: 34%;
+  right: 11%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 15s;
+  animation-delay: -6s;
+}
+
+.float-icon-9 {
+  top: 61%;
+  right: 7%;
+  width: 34px;
+  height: 34px;
+  animation-duration: 17s;
+  animation-delay: -9s;
+}
+
 .float-icon-10 {
-  top: 88%;
-  right: 35%;
+  top: 87%;
+  right: 34%;
   width: 25px;
   height: 25px;
-  animation-duration: 19s, 28s;
+  animation-duration: 13s;
+  animation-delay: -4s;
+}
+
+.float-icon-11 {
+  top: 17%;
+  left: 48%;
+  width: 26px;
+  height: 26px;
+  animation-duration: 18s;
+  animation-delay: -11s;
+}
+
+.float-icon-12 {
+  top: 32%;
+  left: 40%;
+  width: 23px;
+  height: 23px;
+  animation-duration: 14s;
+  animation-delay: -6s;
+}
+
+.float-icon-13 {
+  top: 46%;
+  right: 39%;
+  width: 29px;
+  height: 29px;
+  animation-duration: 21s;
+  animation-delay: -13s;
+}
+
+.float-icon-14 {
+  top: 73%;
+  right: 44%;
+  width: 27px;
+  height: 27px;
+  animation-duration: 16s;
+  animation-delay: -7s;
+}
+
+.float-icon-15 {
+  top: 82%;
+  right: 13%;
+  width: 31px;
+  height: 31px;
+  animation-duration: 19s;
   animation-delay: -12s;
 }
 
-@keyframes floatingIcon {
-  0%,
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  25% {
-    transform: translate3d(18px, -25px, 0);
-  }
-
-  50% {
-    transform: translate3d(-12px, -45px, 0);
-  }
-
-  75% {
-    transform: translate3d(-25px, -15px, 0);
-  }
+.float-icon-16 {
+  top: 8%;
+  right: 8%;
+  width: 28px;
+  height: 28px;
+  animation-duration: 15s;
+  animation-delay: -9s;
 }
 
-@keyframes floatingRotate {
+.float-icon-17 {
+  top: 48%;
+  right: 7%;
+  width: 32px;
+  height: 32px;
+  animation-duration: 22s;
+  animation-delay: -15s;
+}
+
+.float-icon-18 {
+  top: 70%;
+  left: 43%;
+  width: 24px;
+  height: 24px;
+  animation-duration: 17s;
+  animation-delay: -5s;
+}
+
+@keyframes floatingIcon {
   0% {
-    rotate: 0deg;
+    transform: translate(0, 0) rotate(0deg);
   }
 
-  50% {
-    rotate: 8deg;
+  20% {
+    transform: translate(45px, -35px) rotate(8deg);
+  }
+
+  40% {
+    transform: translate(-35px, -75px) rotate(-8deg);
+  }
+
+  60% {
+    transform: translate(-65px, 15px) rotate(10deg);
+  }
+
+  80% {
+    transform: translate(35px, 55px) rotate(-6deg);
   }
 
   100% {
-    rotate: 0deg;
+    transform: translate(0, 0) rotate(0deg);
   }
 }
 
 @media (max-width: 768px) {
   .floating-icon {
-    opacity: 0.045;
+    opacity: 0.04;
   }
 
   .float-icon-1,
   .float-icon-7,
-  .float-icon-9 {
+  .float-icon-9,
+  .float-icon-15,
+  .float-icon-17 {
     width: 27px;
     height: 27px;
   }
@@ -165,14 +223,20 @@
   .float-icon-2,
   .float-icon-4,
   .float-icon-6,
-  .float-icon-10 {
+  .float-icon-10,
+  .float-icon-12,
+  .float-icon-18 {
     width: 21px;
     height: 21px;
   }
 
   .float-icon-3,
   .float-icon-5,
-  .float-icon-8 {
+  .float-icon-8,
+  .float-icon-11,
+  .float-icon-13,
+  .float-icon-14,
+  .float-icon-16 {
     width: 24px;
     height: 24px;
   }
@@ -186,7 +250,9 @@
   .float-icon-2,
   .float-icon-4,
   .float-icon-6,
-  .float-icon-10 {
+  .float-icon-10,
+  .float-icon-12,
+  .float-icon-18 {
     display: none;
   }
 }

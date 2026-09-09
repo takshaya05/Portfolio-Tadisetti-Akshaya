@@ -3,6 +3,7 @@ import {
   FaUsers,
   FaHandsHelping
 } from "react-icons/fa";
+import { Trophy } from "lucide-react";
 
 const Achievements = () => {
   const achievements = [
@@ -31,7 +32,10 @@ const Achievements = () => {
       <div className="achievements-container">
 
         <div className="section-title">
-          <h2>Achievements & Extracurricular Activities</h2>
+          <h2>
+            <Trophy className="achievements-title-icon" />
+            Achievements & Extracurricular Activities
+          </h2>
           <span></span>
         </div>
 

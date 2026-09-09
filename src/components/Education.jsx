@@ -9,14 +9,15 @@ const Education = () => {
   return (
     <section id="education" className="education section">
       <div className="education-container">
-
         <div className="section-title">
-          <h2>Education</h2>
+          <h2>
+            <GraduationCap className="education-title-icon" />
+            Education
+          </h2>
           <span></span>
         </div>
 
         <div className="education-wrapper">
-
           <div className="education-card">
             <div className="education-icon">
               <Building2 size={28} strokeWidth={1.8} />
@@ -108,7 +109,6 @@ const Education = () => {
               </span>
             </div>
           </div>
-
         </div>
       </div>
     </section>

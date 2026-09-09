@@ -27,9 +27,7 @@ function App() {
         <Achievements />
         <Contact />
       </main>
-
       <Footer />
-
     </div>
   );
 }

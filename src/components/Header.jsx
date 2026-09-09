@@ -1,15 +1,27 @@
 import { useEffect, useState } from "react";
-import { Menu, X, UserRound } from "lucide-react";
+import {
+  Menu,
+  X,
+  UserRound,
+  House,
+  User,
+  GraduationCap,
+  Wrench,
+  FolderKanban,
+  Award,
+  Trophy,
+  Mail,
+} from "lucide-react";
 
 const sections = [
-  "home",
-  "about",
-  "education",
-  "skills",
-  "projects",
-  "certifications",
-  "achievements",
-  "contact",
+  { id: "home", label: "Home", icon: House },
+  { id: "about", label: "About", icon: User },
+  { id: "education", label: "Education", icon: GraduationCap },
+  { id: "skills", label: "Skills", icon: Wrench },
+  { id: "projects", label: "Projects", icon: FolderKanban },
+  { id: "certifications", label: "Certifications", icon: Award },
+  { id: "achievements", label: "Achievements", icon: Trophy },
+  { id: "contact", label: "Contact", icon: Mail },
 ];
 
 const Header = () => {
@@ -21,7 +33,7 @@ const Header = () => {
       const scrollPosition = window.scrollY + 180;
 
       sections.forEach((section) => {
-        const element = document.getElementById(section);
+        const element = document.getElementById(section.id);
 
         if (element) {
           const top = element.offsetTop;
@@ -31,7 +43,7 @@ const Header = () => {
             scrollPosition >= top &&
             scrollPosition < top + height
           ) {
-            setActive(section);
+            setActive(section.id);
           }
         }
       });
@@ -46,6 +58,7 @@ const Header = () => {
 
   const scrollToSection = (id) => {
     setMenuOpen(false);
+
     document.getElementById(id)?.scrollIntoView({
       behavior: "smooth",
     });
@@ -54,7 +67,6 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header-container">
-
         <div
           className="logo"
           onClick={() => scrollToSection("home")}
@@ -64,19 +76,24 @@ const Header = () => {
         </div>
 
         <nav className={menuOpen ? "nav active" : "nav"}>
-          {sections.map((item) => (
-            <button
-              key={item}
-              onClick={() => scrollToSection(item)}
-              className={
-                active === item
-                  ? "nav-link active"
-                  : "nav-link"
-              }
-            >
-              {item.charAt(0).toUpperCase() + item.slice(1)}
-            </button>
-          ))}
+          {sections.map((item) => {
+            const Icon = item.icon;
+
+            return (
+              <button
+                key={item.id}
+                onClick={() => scrollToSection(item.id)}
+                className={
+                  active === item.id
+                    ? "nav-link active"
+                    : "nav-link"
+                }
+              >
+                <Icon size={17} strokeWidth={1.8} />
+                <span>{item.label}</span>
+              </button>
+            );
+          })}
         </nav>
 
         <button
@@ -85,7 +102,6 @@ const Header = () => {
         >
           {menuOpen ? <X size={25} /> : <Menu size={25} />}
         </button>
-
       </div>
     </header>
   );

@@ -7,6 +7,7 @@ import {
   FaDatabase,
   FaCode
 } from "react-icons/fa";
+import { Award } from "lucide-react";
 
 const Certifications = () => {
   const certifications = [
@@ -47,7 +48,10 @@ const Certifications = () => {
       <div className="certifications-container">
 
         <div className="section-title">
-          <h2>Certifications</h2>
+          <h2>
+            <Award className="certifications-title-icon" />
+            Certifications
+          </h2>
           <span></span>
         </div>
 

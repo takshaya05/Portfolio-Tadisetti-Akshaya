@@ -4,75 +4,74 @@
   margin: auto;
 }
 
+.contact .section-title h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.contact-title-icon {
+  width: 26px;
+  height: 26px;
+  flex-shrink: 0;
+  color: var(--accent);
+  stroke-width: 2;
+}
+
 .contact-grid {
   display: grid;
-
   grid-template-columns: repeat(2, minmax(0, 1fr));
-
   gap: 20px;
 }
 
 .contact-card {
   width: 100%;
-
   display: flex;
   align-items: center;
-
   gap: 18px;
-
   padding: 22px;
-
   border-radius: 20px;
-
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.12);
-
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
-
-  transition: 0.4s ease;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    border-color 0.4s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-6px);
-
+  transform: scale(1.03);
   border-color: var(--accent);
-
-  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 25px rgba(217, 185, 140, 0.15);
 }
 
 .contact-icon {
   flex-shrink: 0;
-
   width: 48px;
   height: 48px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   border-radius: 50%;
-
   background: var(--accent);
   color: #111;
-
   font-size: 1.3rem;
 }
 
 .contact-card h3 {
   color: var(--accent);
-
   font-size: 1rem;
-
   margin-bottom: 5px;
 }
 
 .contact-card a,
 .contact-card p {
   color: var(--secondary);
-
   font-size: 0.9rem;
-
   word-break: break-word;
 }
 
@@ -80,15 +79,10 @@
   color: var(--accent);
 }
 
-/* Form */
-
 .contact-form {
   margin-top: 40px;
-
   padding: 30px;
-
   border-radius: 15px;
-
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -106,27 +100,19 @@
 
 .form-row {
   display: grid;
-
   grid-template-columns: 1fr 1fr;
-
   gap: 15px;
 }
 
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-
   padding: 14px 16px;
-
   border: none;
   outline: none;
-
   border-radius: 8px;
-
   background: rgba(255, 255, 255, 0.08);
-
   color: inherit;
-
   font-size: 15px;
   font-family: inherit;
 }
@@ -137,12 +123,9 @@
 
 .contact-form button {
   padding: 14px 25px;
-
   border-radius: 8px;
-
   font-size: 16px;
   font-weight: 600;
-
   transition: 0.3s;
 }
 
@@ -161,5 +144,14 @@
 
   .contact-card {
     padding: 20px;
+  }
+
+  .contact-title-icon {
+    width: 23px;
+    height: 23px;
+  }
+
+  .contact-card:hover {
+    transform: scale(1.015);
   }
 }

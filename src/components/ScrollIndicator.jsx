@@ -1,46 +1,64 @@
 import { useEffect, useState } from "react";
+import {
+  House,
+  User,
+  GraduationCap,
+  Wrench,
+  FolderKanban,
+  Award,
+  Trophy,
+  Mail
+} from "lucide-react";
 
 const sections = [
   {
     id: "home",
     label: "Home",
     color: "#F5EFE6",
+    icon: House
   },
   {
     id: "about",
     label: "About",
     color: "#F5EFE6",
+    icon: User
   },
   {
     id: "education",
     label: "Education",
     color: "#F5EFE6",
+    icon: GraduationCap
   },
   {
     id: "skills",
     label: "Skills",
-    color: "#f5efe6",
+    color: "#F5EFE6",
+    icon: Wrench
   },
   {
     id: "projects",
     label: "Projects",
     color: "#F5EFE6",
+    icon: FolderKanban
   },
   {
     id: "certifications",
     label: "Certifications",
     color: "#F5EFE6",
+    icon: Award
   },
   {
     id: "achievements",
     label: "Achievements",
     color: "#F5EFE6",
+    icon: Trophy
   },
   {
     id: "contact",
     label: "Contact",
     color: "#F5EFE6",
-  },
+    icon: Mail
+  }
 ];
 
 function ScrollIndicator() {
@@ -84,7 +102,7 @@ function ScrollIndicator() {
     if (element) {
       element.scrollIntoView({
         behavior: "smooth",
-        block: "start",
+        block: "start"
       });
     }
   };
@@ -93,29 +111,32 @@ function ScrollIndicator() {
     <div
       className="scroll-indicator"
       style={{
-        "--active-color": activeColor,
+        "--active-color": activeColor
       }}
     >
       <div className="scroll-track">
+        {sections.map((section) => {
+          const Icon = section.icon;
 
-        {sections.map((section) => (
-          <button
-            key={section.id}
-            className={`scroll-dot ${
-              activeSection === section.id ? "active" : ""
-            }`}
-            style={{
-              "--dot-color": section.color,
-            }}
-            onClick={() => scrollToSection(section.id)}
-            aria-label={`Go to ${section.label}`}
-          >
-            <span className="scroll-label">
-              {section.label}
-            </span>
-          </button>
-        ))}
-
+          return (
+            <button
+              key={section.id}
+              className={`scroll-dot ${
+                activeSection === section.id ? "active" : ""
+              }`}
+              style={{
+                "--dot-color": section.color
+              }}
+              onClick={() => scrollToSection(section.id)}
+              aria-label={`Go to ${section.label}`}
+            >
+              <span className="scroll-label">
+                <Icon size={14} strokeWidth={1.8} />
+                <span>{section.label}</span>
+              </span>
+            </button>
+          );
+        })}
       </div>
     </div>
   );
