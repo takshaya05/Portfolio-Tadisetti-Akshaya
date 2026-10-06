@@ -50,8 +50,7 @@ const Skills = () => {
         { name: "MongoDB", icon: FaDatabase },
         { name: "Firebase", icon: FaDatabase },
         { name: "GitHub", icon: FaGithub },
-        { name: "VS Code", icon: FaCode },
-        { name: "Google Colab", icon: FaBrain }
+        { name: "VS Code", icon: FaCode }
       ]
     },
     {
@@ -61,9 +60,9 @@ const Skills = () => {
         { name: "Data Structures & Algorithms", icon: FaCodeBranch },
         { name: "OOPs", icon: FaLaptopCode },
         { name: "DBMS", icon: FaDatabase },
+        { name: "AI/ML Fundamentals", icon: FaBrain },
         { name: "Operating Systems", icon: FaLaptopCode },
-        { name: "Computer Networks", icon: FaNetworkWired },
-        { name: "AI/ML Fundamentals", icon: FaBrain }
+        { name: "Computer Networks", icon: FaNetworkWired }
       ]
     }
   ];

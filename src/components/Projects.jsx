@@ -1,12 +1,12 @@
 import {
   FaGithub,
-  FaRobot,
   FaShieldAlt,
   FaHospital,
   FaIdCard,
   FaGlobe,
   FaGamepad,
-  FaExternalLinkAlt
+  FaExternalLinkAlt,
+  FaCar
 } from "react-icons/fa";
 import { FolderKanban } from "lucide-react";
 
@@ -17,72 +17,72 @@ const Projects = () => {
       icon: FaGlobe,
       tagline: "Your Gateway to Smooth Journeys",
       description: [
-        "Developed an AI-powered travel intelligence platform to simplify foreign country laws, visa rules, travel regulations, and legal restrictions.",
-        "Implemented AI chatbot assistance, country selection, risk maps, travel advisories, and country comparison features.",
-        "Built using React.js, Vite, Tailwind CSS, Node.js, and Ollama API."
+        "Developed an AI-powered travel intelligence platform that simplifies foreign laws, visa rules, travel regulations, and legal restrictions for travellers.",
+        "Implemented traveller profiles, country selection, risk maps, travel advisories, country comparison, and an AI chatbot for instant travel and legal assistance.",
+        "Built using React.js, Vite, JavaScript, Tailwind CSS, Node.js, and Ollama API."
       ],
-      technologies: ["React.js", "Node.js", "Ollama API"],
-      link: "https://github.com/takshaya05/TravizorHub"
+      github: "https://github.com/takshaya05/TravizorHub",
+      website: "https://travizor-hub.vercel.app/"
+    },
+    {
+      title: "VisionPlate",
+      icon: FaCar,
+      tagline: "Smart Plate Recognition",
+      description: [
+        "Developed an AI-powered Automatic Number Plate Recognition application that detects vehicle number plates from images using YOLO.",
+        "Implemented character recognition with EasyOCR, confidence score display, multiple plate detection, and an interactive dashboard for recognition results.",
+        "Built using Python, Streamlit, YOLO, EasyOCR, and OpenCV."
+      ],
+      github: "https://github.com/takshaya05/VisionPlate",
+      website: "https://visionplate.streamlit.app/"
     },
     {
       title: "Smart Tourist",
       icon: FaShieldAlt,
       tagline: "Every Step Secured, Every Trip Smarter",
       description: [
-        "Developed a smart tourist safety platform for real-time safety monitoring and emergency incident response.",
-        "Implemented AI risk detection, geo-fencing alerts, blockchain-secured digital IDs, SOS assistance, and tourist safety dashboards.",
-        "Built using React.js, Tailwind CSS, Node.js, Firebase, Google Maps API."
+        "Developed an integrated tourist safety platform to address risks such as theft, scams, accidents, and emergencies during travel.",
+        "Implemented AI risk detection, geo-fencing alerts, blockchain-based digital ID, SOS emergency response, and a tourist safety dashboard.",
+        "Built using React.js, Tailwind CSS, Node.js, Firebase, Google Maps API, and OpenWeatherMap API."
       ],
-      technologies: ["React.js", "Firebase", "Google Maps API"],
-      link: "https://github.com/takshaya05/SmartTourist"
+      github: "https://github.com/takshaya05/SmartTourist",
+      website: "https://smart-tourist-virid.vercel.app/"
     },
     {
       title: "MediPlan",
       icon: FaHospital,
       tagline: "Intelligent Hospital Floor Planning System",
       description: [
-        "Developed an intelligent hospital floor planning platform to optimize healthcare infrastructure, workflows, and space utilization.",
-        "Implemented AI hospital layout generation, floor plan visualization, planning analytics, intelligent recommendations, and layout export.",
-        "Built using React.js, Vite, Node.js, CNN, Graphormer, GAN."
+        "Developed an AI-powered hospital floor planning platform for smart space planning.",
+        "Implemented hospital layout generation, floor plan visualization, planning analytics, AI recommendations, and layout export.",
+        "Built using React.js, Vite, JavaScript, Tailwind CSS, Node.js, Recharts, and Framer Motion."
       ],
-      technologies: ["React.js", "Graphormer", "GAN"],
-      link: "https://github.com/takshaya05/MediPlan"
+      github: "https://github.com/takshaya05/MediPlan",
+      website: "https://medi-plan-rho.vercel.app/"
     },
     {
       title: "CardVista",
       icon: FaIdCard,
       tagline: "Scan. View. Connect.",
       description: [
-        "Developed an AR-enabled digital visiting card platform for creating, scanning, viewing, and interacting with futuristic 3D business cards.",
-        "Implemented WebAR simulations, holographic cards, avatars, QR scanning, voice introductions, interactive contact actions, and customizable AR scenes.",
-        "Built using React.js, Vite, Tailwind CSS, Node.js, and Three.js."
+        "Developed an AR-enabled digital visiting card platform for creating, uploading, viewing, managing, scanning, and sharing digital business cards.",
+        "Implemented WebAR and 3D visualization, QR code scanning, holographic cards, avatars, interactive contact actions, and customizable AR scenes.",
+        "Built using React.js, Vite, Tailwind CSS, Node.js, Express.js, MongoDB, and Three.js."
       ],
-      technologies: ["React.js", "Three.js", "Node.js"],
-      link: "https://github.com/takshaya05/CardVista"
-    },
-    {
-      title: "AI Country Dashboard",
-      icon: FaRobot,
-      tagline: "Explore. Learn. Discover the World with AI.",
-      description: [
-        "Developed an AI-powered educational dashboard for interactive country exploration, global learning, and knowledge discovery.",
-        "Implemented a 3D globe simulator, AI Chat Tutor, country learning modules, quizzes, flag-matching games, and interactive country data.",
-        "Built using React.js, Vite, Tailwind CSS, Node.js, Ollama API and Three.js."
-      ],
-      technologies: ["React.js", "Ollama API", "Three.js"],
-      link: "https://github.com/takshaya05/AiCountryDashboard"
+      github: "https://github.com/takshaya05/CardVista",
+      website: "https://card-vista.vercel.app/"
     },
     {
       title: "Akinator",
       icon: FaGamepad,
       tagline: "The Mind Reading Game",
       description: [
-        "Developed an interactive mind-reading game that guesses real or fictional characters based on user responses.",
-        "Implemented intelligent question-based gameplay, Yes/No answer selection, character narrowing, and an engaging interactive game flow.",
-        "Built using React.js, Vite, JavaScript, MongoDB, Express.js and Node.js."
+        "Developed an AI-powered guessing game that identifies real or fictional characters based on the player's answers to a series of questions.",
+        "Implemented a smart question system, intelligent character narrowing, candidate tracking, character database, and interactive result celebration.",
+        "Built using React.js, Vite, Node.js, Express.js, and MongoDB."
       ],
-      technologies: ["React.js", "Node.js", "MongoDB"],
-      link: "https://github.com/takshaya05/Akinator"
+      github: "https://github.com/takshaya05/Akinator",
+      website: "https://akinator-frontend.vercel.app/"
     }
   ];
 
@@ -124,22 +124,29 @@ const Projects = () => {
                   ))}
                 </ul>
 
-                <div className="tech-stack">
-                  {project.technologies.map((tech, i) => (
-                    <span key={i}>{tech}</span>
-                  ))}
-                </div>
+                <div className="project-actions">
+                  <a
+                    href={project.github}
+                    className="github-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGithub size={16} />
+                    <span>GitHub</span>
+                    <FaExternalLinkAlt size={12} />
+                  </a>
 
-                <a
-                  href={project.link}
-                  className="github-btn"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub size={16} />
-                  <span>View GitHub</span>
-                  <FaExternalLinkAlt size={12} />
-                </a>
+                  <a
+                    href={project.website}
+                    className="website-btn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <FaGlobe size={16} />
+                    <span>Website</span>
+                    <FaExternalLinkAlt size={12} />
+                  </a>
+                </div>
 
               </div>
             );

@@ -45,7 +45,7 @@ const Education = () => {
 
               <span>
                 <Award size={17} strokeWidth={1.8} />
-                <span>CGPA: 9.15</span>
+                <span>CGPA : 9.15</span>
               </span>
             </div>
           </div>
@@ -76,7 +76,7 @@ const Education = () => {
 
               <span>
                 <Award size={17} strokeWidth={1.8} />
-                <span>Percentage: 96.4</span>
+                <span>Percentage : 96.4</span>
               </span>
             </div>
           </div>
@@ -105,7 +105,7 @@ const Education = () => {
 
               <span>
                 <Award size={17} strokeWidth={1.8} />
-                <span>Percentage: 90.4</span>
+                <span>Percentage : 90.4</span>
               </span>
             </div>
           </div>
