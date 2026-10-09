@@ -5,7 +5,6 @@ import {
   signOut,
 } from "firebase/auth";
 import { auth, googleProvider } from "../firebase";
-import "../styles/AuthGate.css";
 
 export default function AuthGate({ children }) {
   const [user, setUser] = useState(null);
