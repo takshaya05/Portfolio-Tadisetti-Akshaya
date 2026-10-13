@@ -10,19 +10,19 @@ const Achievements = () => {
     {
       title: "Research Paper Publication",
       description:
-        "Published a research paper titled “Innovative Hospital Floor Planning using Graphormers” in the 2025 International Conference on Computing Technologies (ICOCT), focusing on AI-driven hospital layout optimization. (DOI: 10.1109/ICOCT64433.2025.11118892)",
+        "Published a research paper titled “Innovative Hospital Floor Planning Using Graphormers” at the 2025 International Conference on Computing Technologies, focusing on AI-driven hospital layout optimization. (DOI: 10.1109/ICOCT64433.2025.11118892)",
       icon: FaBookOpen
     },
     {
-      title: "Hackathons, Contests & Technical Workshops",
+      title: "Hackathons & Technical Events",
       description:
-        "Participated in hackathons, contests, and technical workshops to enhance practical exposure, teamwork, and collaborative problem-solving skills.",
+        "Participated in Hackfiniti and Vyoma Hackathon, enhancing teamwork, practical problem-solving, and collaboration skills.",
       icon: FaUsers
     },
     {
-      title: "NSS Coordinator & Volunteer",
+      title: "NSS Coordinator",
       description:
-        "Serving as an NSS Coordinator and Volunteer at the NSS Unit, BVRIT, organizing and participating in social service and awareness activities supporting community development initiatives.",
+        "Served as an NSS Coordinator at BVRIT, organizing and participating in social service and awareness activities.",
       icon: FaHandsHelping
     }
   ];

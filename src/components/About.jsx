@@ -31,9 +31,9 @@ const About = () => {
 
           <p className="about-text">
             Beyond technical skills, I possess strong <strong>leadership, adaptability,
-            responsibility, communication, and presentation </strong>skills. I also serve
+            responsibility, communication, and presentation </strong>skills. I also served
             as an <strong>NSS Coordinator</strong> at the NSS Unit, BVRIT,
-            where I organize and participate in activities, contributing to community
+            where I organized and participated in activities, contributing to community
             development initiatives while strengthening my leadership, teamwork, and organizational abilities.
           </p>
         </div>
